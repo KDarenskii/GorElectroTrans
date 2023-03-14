@@ -1,0 +1,11 @@
+.page-heading {
+    // .page-heading__title
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+    // .page-heading__subtitle
+    &__subtitle {
+        font-size: 1.3rem;
+    }
+}

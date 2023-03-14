@@ -1,0 +1,11 @@
+.students {
+    // .students__table
+    &__table {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    // .students__pagination
+    &__pagination {
+        justify-content: flex-end;
+    }
+}

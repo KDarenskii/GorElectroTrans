@@ -1,0 +1,12 @@
+.work-plan {
+    flex: 1;
+    // .work-plan__table
+    &__table {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    // .work-plan__pagination
+    &__pagination {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,13 @@
+@import "../../assets/styles/mixins.scss";
+
+.work-plan-page {
+    // .work-plan-page__info
+    &__info {
+        margin-bottom: 40px;
+    }
+    // .work-plan-page__wrapper
+    &__wrapper {
+        @include flex-center(12px, space-between);
+        margin: 20px 0 30px;
+    }
+}

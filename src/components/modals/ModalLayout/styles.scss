@@ -1,0 +1,17 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.modal-layout {
+    @include position(0, 0, fixed);
+    @include flex-center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($black, 0.6);
+    // .modal-layout__body
+    &__body {
+        background-color: $white;
+        border-radius: 10px;
+        max-width: 500px;
+        width: 100%;
+    }
+}
