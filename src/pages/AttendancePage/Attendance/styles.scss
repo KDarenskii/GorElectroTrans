@@ -1,0 +1,12 @@
+.attendance {
+    flex: 1;
+    // .attendance__table
+    &__table {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    // .attendance__pagination
+    &__pagination {
+        justify-content: flex-end;
+    }
+}

@@ -1,16 +1,16 @@
 import React from "react";
+import EditAttendanceModal from "../../../components/modals/EditAttendanceModal";
+import Pagination from "../../../components/Pagination";
 import Table from "../../../components/Table";
 import TableBodyRow from "../../../components/Table/TableBodyRow";
 import TableBodyCell from "../../../components/Table/TableBodyRow/TableBodyCell";
 import TableHead from "../../../components/Table/TableHead";
 import TableHeadCell from "../../../components/Table/TableHead/TableHeadCell";
-import Pagination from "../../../components/Pagination";
-import EditWorkPlanModal from "../../../components/modals/EditWorkPlanModal";
 import useLockedBody from "../../../hooks/useLockedBody";
 
 import "./styles.scss";
 
-const WorkPlan: React.FC = () => {
+const Attendance: React.FC = () => {
     const [isEditing, setIsEditing] = React.useState(false);
     useLockedBody(isEditing);
 
@@ -20,67 +20,60 @@ const WorkPlan: React.FC = () => {
     };
 
     return (
-        <div className="work-plan">
-            {isEditing && <EditWorkPlanModal setIsActive={setIsEditing} />}
-            <Table className="work-plan__table">
+        <div className="attendance">
+            {isEditing && <EditAttendanceModal setIsActive={setIsEditing} />}
+            <Table className="attendance__table">
                 <TableHead>
                     <TableHeadCell>Номер занятия</TableHeadCell>
-                    <TableHeadCell>Тема занятия</TableHeadCell>
-                    <TableHeadCell>Длительность занятия</TableHeadCell>
-                    <TableHeadCell>Кол-во обучающихся</TableHeadCell>
+                    <TableHeadCell>Фамилия И.О</TableHeadCell>
+                    <TableHeadCell>Отдел</TableHeadCell>
                     <TableHeadCell>Дата</TableHeadCell>
-                    <TableHeadCell>Преподаватель</TableHeadCell>
+                    <TableHeadCell>Зачет/Незачет</TableHeadCell>
+                    <TableHeadCell>Тема занятия</TableHeadCell>
+                    <TableHeadCell>Кол-во часов</TableHeadCell>
                 </TableHead>
                 <tbody>
                     <TableBodyRow onClick={handleOpenEditing}>
                         <TableBodyCell>1</TableBodyCell>
+                        <TableBodyCell>Иванов И.В</TableBodyCell>
+                        <TableBodyCell>Слесари</TableBodyCell>
+                        <TableBodyCell>13.01.2023</TableBodyCell>
+                        <TableBodyCell>Зачет</TableBodyCell>
                         <TableBodyCell>
                             «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
                             производства»
                         </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        <TableBodyCell>1.5</TableBodyCell>
                     </TableBodyRow>
                     <TableBodyRow onClick={handleOpenEditing}>
                         <TableBodyCell>1</TableBodyCell>
+                        <TableBodyCell>Иванов И.В</TableBodyCell>
+                        <TableBodyCell>Слесари</TableBodyCell>
+                        <TableBodyCell>13.01.2023</TableBodyCell>
+                        <TableBodyCell>Зачет</TableBodyCell>
                         <TableBodyCell>
                             «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
                             производства»
                         </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        <TableBodyCell>1.5</TableBodyCell>
                     </TableBodyRow>
                     <TableBodyRow onClick={handleOpenEditing}>
                         <TableBodyCell>1</TableBodyCell>
+                        <TableBodyCell>Иванов И.В</TableBodyCell>
+                        <TableBodyCell>Слесари</TableBodyCell>
+                        <TableBodyCell>13.01.2023</TableBodyCell>
+                        <TableBodyCell>Зачет</TableBodyCell>
                         <TableBodyCell>
                             «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
                             производства»
                         </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        <TableBodyCell>1.5</TableBodyCell>
                     </TableBodyRow>
                 </tbody>
             </Table>
-            <Pagination className="work-plan__pagination" />
+            <Pagination className="attendance__pagination" />
         </div>
     );
 };
 
-export default WorkPlan;
+export default Attendance;

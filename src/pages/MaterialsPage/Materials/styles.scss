@@ -1,0 +1,11 @@
+.materials {
+    // .materials__table
+    &__table {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    // .materials__pagination
+    &__pagination {
+        justify-content: flex-end;
+    }
+}

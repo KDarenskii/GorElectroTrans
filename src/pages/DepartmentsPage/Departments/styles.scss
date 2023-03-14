@@ -1,0 +1,11 @@
+.departments {
+    // .departments__table
+    &__table {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    // .departments__pagination
+    &__pagination {
+        justify-content: flex-end;
+    }
+}
