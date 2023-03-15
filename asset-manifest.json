@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GorElectroTrans/static/css/main.a76c5d04.css",
-    "main.js": "/GorElectroTrans/static/js/main.4732a3bd.js",
+    "main.js": "/GorElectroTrans/static/js/main.dc8ff493.js",
     "static/js/787.4d350c16.chunk.js": "/GorElectroTrans/static/js/787.4d350c16.chunk.js",
     "static/media/Verdana.eot": "/GorElectroTrans/static/media/Verdana.8ff50b17b89a6cb99382.eot",
     "static/media/Verdana.ttf": "/GorElectroTrans/static/media/Verdana.06356c47838279a6fe85.ttf",
@@ -10,11 +10,11 @@
     "static/media/logo-footer.svg": "/GorElectroTrans/static/media/logo-footer.7fb86365d0fd49b00d31d47c8b36a9e7.svg",
     "index.html": "/GorElectroTrans/index.html",
     "main.a76c5d04.css.map": "/GorElectroTrans/static/css/main.a76c5d04.css.map",
-    "main.4732a3bd.js.map": "/GorElectroTrans/static/js/main.4732a3bd.js.map",
+    "main.dc8ff493.js.map": "/GorElectroTrans/static/js/main.dc8ff493.js.map",
     "787.4d350c16.chunk.js.map": "/GorElectroTrans/static/js/787.4d350c16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a76c5d04.css",
-    "static/js/main.4732a3bd.js"
+    "static/js/main.dc8ff493.js"
   ]
 }
