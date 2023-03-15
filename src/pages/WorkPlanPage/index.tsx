@@ -2,9 +2,10 @@ import React from "react";
 import Search from "../../components/Search";
 import SectionHeader from "../../components/SectionHeader";
 import WorkPlan from "./WorkPlan";
+import NewWorkPlan from "./NewWorkPlan";
+import WorkPlanReport from "./WorkPlanReport";
 
 import "./styles.scss";
-import NewWorkPlan from "./NewWorkPlan";
 
 const WorkPlanPage: React.FC = () => {
     return (
@@ -13,7 +14,10 @@ const WorkPlanPage: React.FC = () => {
                 <SectionHeader title="Рабочий план" subtitle="ОСП «Трамвайный парк №1»" />
                 <div className="work-plan-page__wrapper">
                     <Search />
-                    <NewWorkPlan />
+                    <div className="work-plan-page__actions">
+                        <WorkPlanReport />
+                        <NewWorkPlan />
+                    </div>
                 </div>
                 <WorkPlan />
             </section>

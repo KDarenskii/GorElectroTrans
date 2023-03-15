@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../Container";
-import logoSrc from "../../../assets/img/logo-footer.svg";
+import Container from "../../../Container";
+import logoSrc from "../../../../assets/img/logo-footer.svg";
 
 import "./styles.scss";
 

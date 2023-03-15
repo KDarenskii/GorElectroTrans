@@ -5,14 +5,14 @@ import "./styles.scss";
 
 type Props = {
     children: React.ReactNode;
-    text: string;
+    text?: string;
     className?: string;
 };
 
 const Label: React.FC<Props> = ({ children, text, className }) => {
     return (
         <label className={cn("label", className)}>
-            <p className="label__text">{text}</p>
+            {text && <p className="label__text">{text}</p>}
             {children}
         </label>
     );

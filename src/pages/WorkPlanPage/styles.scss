@@ -10,4 +10,9 @@
         @include flex-center(12px, space-between);
         margin: 20px 0 30px;
     }
+    // .work-plan-page__actions
+    &__actions {
+        display: flex;
+        gap: 0.7rem;
+    }
 }

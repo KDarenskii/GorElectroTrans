@@ -1,5 +1,5 @@
-@import "../../../assets/styles/vars.scss";
-@import "../../../assets/styles/mixins.scss";
+@import "../../../../assets/styles/vars.scss";
+@import "../../../../assets/styles/mixins.scss";
 
 .menu {
     margin-top: 48px;
@@ -17,6 +17,22 @@
         width: 100%;
         &:hover {
             background-color: rgba($grey, 0.4);
+        }
+    }
+    // .menu__link-icons-wrapper
+    &__link-icons-wrapper {
+        @include flex-center(0, flex-start);
+        margin-right: 5px;
+    }
+    // .menu__link-icon
+    &__link-icon {
+        &:first-child {
+            rect {
+                fill: red;
+            }
+        }
+        &:last-child {
+            margin-left: -9px;
         }
     }
     // .menu__link
@@ -39,6 +55,9 @@
                 @include position(51%, 4px);
                 transform: translateY(-50%);
             }
+        }
+        &--back {
+            @include flex-center(0, flex-start);
         }
     }
 }
