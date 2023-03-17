@@ -2,6 +2,7 @@
 
 .work-plan-report-form {
     @include flex-center(1rem);
+    flex-wrap: wrap;
     // .work-plan-report-form__label
     &__label {
         text-align: center;

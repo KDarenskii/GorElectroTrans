@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { WORK_PLAN_ROUTE } from "../../../../constants/routesPathnames";
+import { Division } from "../../../../constants/divisionsRoutes";
 
 import "./styles.scss";
 
 type Props = {
-    name: string;
+    division: Division;
 };
 
-const DivisionsItem: React.FC<Props> = ({ name }) => {
+const DivisionsItem: React.FC<Props> = ({ division }) => {
     return (
         <li className="divisions-item">
-            <Link className="divisions-item__link" to={WORK_PLAN_ROUTE}>
-                <h5 className="divisions-item__title">{name}</h5>
+            <Link className="divisions-item__link" to={division.route}>
+                <h5 className="divisions-item__title">{division.name}</h5>
             </Link>
         </li>
     );

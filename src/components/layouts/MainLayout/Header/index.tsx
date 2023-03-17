@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     const location = useLocation();
 
     const handleLogout = () => {
-        navigate(LOGIN_ROUTE);
+        navigate(LOGIN_ROUTE.PATH);
     };
 
     return (
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             <Container>
                 <div className="header__wrapper">
                     <img className="header__logo" src={logoSrc} alt="Logo" />
-                    {location.pathname !== LOGIN_ROUTE && (
+                    {location.pathname !== LOGIN_ROUTE.PATH && (
                         <ActionButton onClick={handleLogout} colorType="add">
                             Выйти
                         </ActionButton>

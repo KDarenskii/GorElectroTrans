@@ -13,7 +13,7 @@ const WorkPlanForm: React.FC = () => {
 
     return (
         <form className="work-plan-form">
-            <Label className="work-plan-form__label" text="Тема занятия">
+            <Label className="work-plan-form__label work-plan-form__label--mb" text="Тема занятия">
                 <Textarea ref={textareaRef} className="work-plan-form__textarea" placeholder="Тема" />
             </Label>
             <div className="work-plan-form__row">

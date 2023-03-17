@@ -4,7 +4,7 @@ import {
     ATTENDANCE_ROUTE,
     DEPARTMENTS_ROUTE,
     DIVISIONS_ROUTE,
-    LOGIN_ROUTE,
+    ROOT_ROUTE,
     MATERIALS_ROUTE,
     STUDENTS_ROUTE,
     WORK_PLAN_ROUTE,
@@ -22,15 +22,15 @@ import MenuLayout from "./layouts/MenuLayout";
 const Router: React.FC = () => {
     return (
         <Routes>
-            <Route path={LOGIN_ROUTE} element={<MainLayout />}>
+            <Route path={ROOT_ROUTE.PATH} element={<MainLayout />}>
                 <Route index element={<LoginPage />} />
-                <Route path={DIVISIONS_ROUTE} element={<DivisionsPage />} />
+                <Route path={DIVISIONS_ROUTE.PATH} element={<DivisionsPage />} />
                 <Route element={<MenuLayout />}>
-                    <Route path={WORK_PLAN_ROUTE} element={<WorkPlanPage />} />
-                    <Route path={STUDENTS_ROUTE} element={<StudentsPage />} />
-                    <Route path={DEPARTMENTS_ROUTE} element={<DepartmentsPage />} />
-                    <Route path={ATTENDANCE_ROUTE} element={<AttendancePage />} />
-                    <Route path={MATERIALS_ROUTE} element={<MaterialsPage />} />
+                    <Route path={WORK_PLAN_ROUTE.PATH} element={<WorkPlanPage />} />
+                    <Route path={STUDENTS_ROUTE.PATH} element={<StudentsPage />} />
+                    <Route path={DEPARTMENTS_ROUTE.PATH} element={<DepartmentsPage />} />
+                    <Route path={ATTENDANCE_ROUTE.PATH} element={<AttendancePage />} />
+                    <Route path={MATERIALS_ROUTE.PATH} element={<MaterialsPage />} />
                 </Route>
             </Route>
         </Routes>

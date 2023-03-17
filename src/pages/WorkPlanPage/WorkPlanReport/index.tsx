@@ -1,7 +1,9 @@
 import React from "react";
-import ActionButton from "../../components/buttons/ActionButton";
-import WorkPlanReportModal from "../../components/modals/WorkPlanReportModal";
-import useLockedBody from "../../hooks/useLockedBody";
+import ActionButton from "../../../components/buttons/ActionButton";
+import WorkPlanReportModal from "../../../components/modals/WorkPlanReportModal";
+import useLockedBody from "../../../hooks/useLockedBody";
+
+import "./styles.scss";
 
 type Props = {
     className?: string;
@@ -20,7 +22,7 @@ const WorkPlanReport: React.FC<Props> = ({ className }) => {
     return (
         <>
             {isActive && <WorkPlanReportModal setIsActive={setIsActive} />}
-            <ActionButton onClick={handleOpenReport} colorType="submit">
+            <ActionButton className="work-plan-report-btn" onClick={handleOpenReport} colorType="submit">
                 Сформировать отчет
             </ActionButton>
         </>

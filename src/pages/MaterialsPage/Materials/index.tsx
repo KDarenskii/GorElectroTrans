@@ -19,46 +19,107 @@ const Materials: React.FC = () => {
         setIsEditing(true);
     };
 
+    const handleDownLoadMaterials = (event: React.MouseEvent) => {
+        event.stopPropagation();
+        console.log(event)
+    };
+
     return (
         <div className="materials">
             {isEditing && <EditMaterialModal setIsActive={setIsEditing} />}
-            <Table className="materials__table">
-                <TableHead>
-                    <TableHeadCell>Номер занятия</TableHeadCell>
-                    <TableHeadCell>Дата проведения</TableHeadCell>
-                    <TableHeadCell>Тема занятия</TableHeadCell>
-                    <TableHeadCell>Материалы</TableHeadCell>
-                </TableHead>
-                <tbody>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>Скачать</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>Скачать</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>Скачать</TableBodyCell>
-                    </TableBodyRow>
-                </tbody>
-            </Table>
+            <div className="materials__table-wrapper">
+                <Table className="materials__table">
+                    <TableHead>
+                        <TableHeadCell>Номер занятия</TableHeadCell>
+                        <TableHeadCell>Дата проведения</TableHeadCell>
+                        <TableHeadCell>Тема занятия</TableHeadCell>
+                        <TableHeadCell>Материалы</TableHeadCell>
+                    </TableHead>
+                    <tbody>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell onClick={handleDownLoadMaterials}>Скачать</TableBodyCell>
+                        </TableBodyRow>
+                    </tbody>
+                </Table>
+            </div>
             <Pagination className="materials__pagination" />
         </div>
     );

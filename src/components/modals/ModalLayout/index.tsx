@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../../Container";
 
 import "./styles.scss";
 
@@ -9,9 +10,13 @@ type Props = {
 const ModalLayout = React.forwardRef<HTMLDivElement, Props>(({ children }, ref) => {
     return (
         <div className="modal-layout">
-            <div ref={ref} className="modal-layout__body">
-                {children}
-            </div>
+            <Container>
+                <div className="modal-layout__wrapper">
+                    <div ref={ref} className="modal-layout__body">
+                        {children}
+                    </div>
+                </div>
+            </Container>
         </div>
     );
 });

@@ -20,7 +20,7 @@ const AddMaterialModal: React.FC<Props> = ({ setIsActive }) => {
 
     return (
         <ModalLayout ref={modalRef}>
-            <ModalHeader closeModal={() => setIsActive(false)}>Добавление студента</ModalHeader>
+            <ModalHeader closeModal={() => setIsActive(false)}>Добавление записи</ModalHeader>
             <ModalContent>
                 <MaterialForm />
             </ModalContent>

@@ -22,26 +22,64 @@ const Departments: React.FC = () => {
     return (
         <div className="departments">
             {isEditing && <EditDepartmentModal setIsActive={setIsEditing} />}
-            <Table className="departments__table">
-                <TableHead>
-                    <TableHeadCell>Номер отдела</TableHeadCell>
-                    <TableHeadCell>Название отдела</TableHeadCell>
-                </TableHead>
-                <tbody>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>Слесари</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>2</TableBodyCell>
-                        <TableBodyCell>Водители</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>3</TableBodyCell>
-                        <TableBodyCell>Монтажники</TableBodyCell>
-                    </TableBodyRow>
-                </tbody>
-            </Table>
+            <div className="departments__table-wrapper">
+                <Table className="departments__table">
+                    <TableHead>
+                        <TableHeadCell>Номер отдела</TableHeadCell>
+                        <TableHeadCell>Название отдела</TableHeadCell>
+                    </TableHead>
+                    <tbody>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>2</TableBodyCell>
+                            <TableBodyCell>Водители</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>3</TableBodyCell>
+                            <TableBodyCell>Монтажники</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>3</TableBodyCell>
+                            <TableBodyCell>Монтажники</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>2</TableBodyCell>
+                            <TableBodyCell>Водители</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>3</TableBodyCell>
+                            <TableBodyCell>Монтажники</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>3</TableBodyCell>
+                            <TableBodyCell>Монтажники</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>2</TableBodyCell>
+                            <TableBodyCell>Водители</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>3</TableBodyCell>
+                            <TableBodyCell>Монтажники</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>3</TableBodyCell>
+                            <TableBodyCell>Монтажники</TableBodyCell>
+                        </TableBodyRow>
+                    </tbody>
+                </Table>
+            </div>
             <Pagination className="departments__pagination" />
         </div>
     );

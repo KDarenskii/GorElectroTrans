@@ -2,12 +2,16 @@
 @import "../../../../assets/styles/mixins.scss";
 
 .menu {
-    margin-top: 48px;
     // .menu__list
     &__list {
         display: flex;
         flex-direction: column;
         width: 17.125rem;
+        @media (max-width: $tablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
     // .menu__item
     &__item {
@@ -17,6 +21,9 @@
         width: 100%;
         &:hover {
             background-color: rgba($grey, 0.4);
+        }
+        @media (max-width: $tablet) {
+            max-width: none;
         }
     }
     // .menu__link-icons-wrapper

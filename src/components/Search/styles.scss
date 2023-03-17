@@ -6,7 +6,7 @@
     position: relative;
     // .search__input
     &__input {
-        width: 280px;
+        width: 100%;
         padding-left: 34px;
         &:focus ~ .search__icon {
             fill: $black;

@@ -1,7 +1,14 @@
+@import "../../../assets/styles/vars.scss";
+
 .work-plan-form {
     // .work-plan-form__label
     &__label {
-        margin-bottom: 10px;
+        &--mb {
+            margin-bottom: 0.6rem;
+        }
+        @media (max-width: $mobileMiddle) {
+            width: 100%;
+        }
     }
     // .work-plan-form__textarea
     &__textarea {
@@ -16,5 +23,9 @@
     &__row {
         display: flex;
         gap: 0.6rem;
+        margin-bottom: 10px;
+        @media (max-width: $mobileMiddle) {
+            flex-wrap: wrap;
+        }
     }
 }

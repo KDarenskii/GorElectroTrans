@@ -17,11 +17,11 @@ type Props = {
 };
 
 const links = [
-    { title: "Студенты", path: STUDENTS_ROUTE },
-    { title: "Рабочий план", path: WORK_PLAN_ROUTE },
-    { title: "Журнал посещаемости", path: ATTENDANCE_ROUTE },
-    { title: "Учебные материалы", path: MATERIALS_ROUTE },
-    { title: "Отделы", path: DEPARTMENTS_ROUTE },
+    { title: "Студенты", path: STUDENTS_ROUTE.PATH },
+    { title: "Рабочий план", path: WORK_PLAN_ROUTE.PATH },
+    { title: "Журнал посещаемости", path: ATTENDANCE_ROUTE.PATH },
+    { title: "Учебные материалы", path: MATERIALS_ROUTE.PATH },
+    { title: "Отделы", path: DEPARTMENTS_ROUTE.PATH },
 ];
 
 const Menu: React.FC<Props> = ({ className }) => {
@@ -32,7 +32,7 @@ const Menu: React.FC<Props> = ({ className }) => {
         <nav className={cn("menu", className)}>
             <ul className="menu__list">
                 <li className="menu__item">
-                    <Link className="menu__link menu__link--back" to={DIVISIONS_ROUTE}>
+                    <Link className="menu__link menu__link--back" to={DIVISIONS_ROUTE.PATH}>
                         <div className="menu__link-icons-wrapper">
                             <svg
                                 className="menu__link-icon"

@@ -1,8 +1,13 @@
 .materials {
+    // .materials__table-wrapper
+    &__table-wrapper {
+        overflow-x: auto;
+        margin-bottom: 1rem;
+    }
     // .materials__table
     &__table {
-        margin-bottom: 1rem;
         width: 100%;
+        min-width: 26.25rem;
     }
     // .materials__pagination
     &__pagination {

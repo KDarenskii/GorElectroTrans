@@ -1,9 +1,13 @@
 .attendance {
-    flex: 1;
+    // .attendance__table-wrapper
+    &__table-wrapper {
+        margin-bottom: 1rem;
+        overflow-x: auto;
+    }
     // .attendance__table
     &__table {
-        margin-bottom: 1rem;
         width: 100%;
+        min-width: 40.625rem;
     }
     // .attendance__pagination
     &__pagination {

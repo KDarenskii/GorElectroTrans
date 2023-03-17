@@ -12,7 +12,7 @@ const AttendancePage: React.FC = () => {
             <section className="attendance-page__info">
                 <SectionHeader title="Журнал посещаемости" subtitle="ОСП «Трамвайный парк №1»" />
                 <div className="attendance-page__wrapper">
-                    <Search />
+                    <Search className="attendance-page__search" />
                     <NewAttendance />
                 </div>
                 <Attendance />

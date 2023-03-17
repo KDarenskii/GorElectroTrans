@@ -1,7 +1,9 @@
-import React from 'react'
-import ActionButton from '../../components/buttons/ActionButton';
-import AddDepartmentModal from '../../components/modals/AddDepartmentModal';
-import useLockedBody from '../../hooks/useLockedBody';
+import React from "react";
+import ActionButton from "../../../components/buttons/ActionButton";
+import AddDepartmentModal from "../../../components/modals/AddDepartmentModal";
+import useLockedBody from "../../../hooks/useLockedBody";
+
+import "./styles.scss";
 
 const NewDepartment: React.FC = () => {
     const [isAdding, setIsAdding] = React.useState(false);
@@ -16,11 +18,11 @@ const NewDepartment: React.FC = () => {
     return (
         <>
             {isAdding && <AddDepartmentModal setIsActive={setIsAdding} />}
-            <ActionButton colorType="add" onClick={handleOpenEditing}>
+            <ActionButton className="new-department-btn" colorType="add" onClick={handleOpenEditing}>
                 Добавить +
             </ActionButton>
         </>
     );
-}
+};
 
-export default NewDepartment
+export default NewDepartment;

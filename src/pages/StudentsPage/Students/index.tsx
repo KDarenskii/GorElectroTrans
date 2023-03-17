@@ -22,30 +22,77 @@ const Students: React.FC = () => {
     return (
         <div className="students">
             {isEditing && <EditStudentModal setIsActive={setIsEditing} />}
-            <Table className="students__table">
-                <TableHead>
-                    <TableHeadCell>Табельный номер</TableHeadCell>
-                    <TableHeadCell>Фамилия И.О</TableHeadCell>
-                    <TableHeadCell>Отдел</TableHeadCell>
-                </TableHead>
-                <tbody>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>0254252</TableBodyCell>
-                        <TableBodyCell>Иванов А.И</TableBodyCell>
-                        <TableBodyCell>Водитель</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>0254252</TableBodyCell>
-                        <TableBodyCell>Иванов А.И</TableBodyCell>
-                        <TableBodyCell>Водитель</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>0254252</TableBodyCell>
-                        <TableBodyCell>Иванов А.И</TableBodyCell>
-                        <TableBodyCell>Водитель</TableBodyCell>
-                    </TableBodyRow>
-                </tbody>
-            </Table>
+            <div className="students__table-wrapper">
+                <Table className="students__table">
+                    <TableHead>
+                        <TableHeadCell>Табельный номер</TableHeadCell>
+                        <TableHeadCell>Фамилия И.О</TableHeadCell>
+                        <TableHeadCell>Отдел</TableHeadCell>
+                    </TableHead>
+                    <tbody>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>0254252</TableBodyCell>
+                            <TableBodyCell>Иванов А.И</TableBodyCell>
+                            <TableBodyCell>Водитель</TableBodyCell>
+                        </TableBodyRow>
+                    </tbody>
+                </Table>
+            </div>
             <Pagination className="students__pagination" />
         </div>
     );

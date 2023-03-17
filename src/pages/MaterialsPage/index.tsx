@@ -8,10 +8,10 @@ import "./styles.scss";
 
 const MaterialsPage: React.FC = () => {
     return (
-        <div className="departments-page">
-            <section className="departments-page__info">
+        <div className="materials-page">
+            <section className="materials-page__info">
                 <SectionHeader title="Учебные материалы" subtitle="ОСП «Трамвайный парк №1»" />
-                <div className="departments-page__wrapper">
+                <div className="materials-page__wrapper">
                     <Search />
                     <NewMaterial />
                 </div>

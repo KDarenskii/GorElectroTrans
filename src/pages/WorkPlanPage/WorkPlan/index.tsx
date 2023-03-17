@@ -22,62 +22,163 @@ const WorkPlan: React.FC = () => {
     return (
         <div className="work-plan">
             {isEditing && <EditWorkPlanModal setIsActive={setIsEditing} />}
-            <Table className="work-plan__table">
-                <TableHead>
-                    <TableHeadCell>Номер занятия</TableHeadCell>
-                    <TableHeadCell>Тема занятия</TableHeadCell>
-                    <TableHeadCell>Длительность занятия</TableHeadCell>
-                    <TableHeadCell>Кол-во обучающихся</TableHeadCell>
-                    <TableHeadCell>Дата</TableHeadCell>
-                    <TableHeadCell>Преподаватель</TableHeadCell>
-                </TableHead>
-                <tbody>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>52</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
-                    </TableBodyRow>
-                </tbody>
-            </Table>
+            <div className="work-plan__table-wrapper">
+                <Table className="work-plan__table">
+                    <TableHead>
+                        <TableHeadCell>Номер занятия</TableHeadCell>
+                        <TableHeadCell>Тема занятия</TableHeadCell>
+                        <TableHeadCell>Длительность занятия</TableHeadCell>
+                        <TableHeadCell>Кол-во обучающихся</TableHeadCell>
+                        <TableHeadCell>Дата</TableHeadCell>
+                        <TableHeadCell>Преподаватель</TableHeadCell>
+                    </TableHead>
+                    <tbody>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>52</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Старший мастер цеха Петров А.А</TableBodyCell>
+                        </TableBodyRow>
+                    </tbody>
+                </Table>
+            </div>
             <Pagination className="work-plan__pagination" />
         </div>
     );

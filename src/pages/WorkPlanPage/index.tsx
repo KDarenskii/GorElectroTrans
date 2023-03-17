@@ -13,7 +13,7 @@ const WorkPlanPage: React.FC = () => {
             <section className="work-plan-page__info">
                 <SectionHeader title="Рабочий план" subtitle="ОСП «Трамвайный парк №1»" />
                 <div className="work-plan-page__wrapper">
-                    <Search />
+                    <Search className="work-plan-page__search" />
                     <div className="work-plan-page__actions">
                         <WorkPlanReport />
                         <NewWorkPlan />

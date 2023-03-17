@@ -1,8 +1,13 @@
 .students {
+    // .students__table-wrapper
+    &__table-wrapper {
+        overflow-x: auto;
+        margin-bottom: 1rem;
+    }
     // .students__table
     &__table {
-        margin-bottom: 1rem;
         width: 100%;
+        min-width: 32.5rem;
     }
     // .students__pagination
     &__pagination {

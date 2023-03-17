@@ -12,7 +12,7 @@ const LoginForm: React.FC = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        navigate(DIVISIONS_ROUTE);
+        navigate(DIVISIONS_ROUTE.PATH);
     };
 
     return (

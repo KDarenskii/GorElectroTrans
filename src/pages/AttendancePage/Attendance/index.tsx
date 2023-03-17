@@ -22,55 +22,141 @@ const Attendance: React.FC = () => {
     return (
         <div className="attendance">
             {isEditing && <EditAttendanceModal setIsActive={setIsEditing} />}
-            <Table className="attendance__table">
-                <TableHead>
-                    <TableHeadCell>Номер занятия</TableHeadCell>
-                    <TableHeadCell>Фамилия И.О</TableHeadCell>
-                    <TableHeadCell>Отдел</TableHeadCell>
-                    <TableHeadCell>Дата</TableHeadCell>
-                    <TableHeadCell>Зачет/Незачет</TableHeadCell>
-                    <TableHeadCell>Тема занятия</TableHeadCell>
-                    <TableHeadCell>Кол-во часов</TableHeadCell>
-                </TableHead>
-                <tbody>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>Иванов И.В</TableBodyCell>
-                        <TableBodyCell>Слесари</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Зачет</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1.5</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>Иванов И.В</TableBodyCell>
-                        <TableBodyCell>Слесари</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Зачет</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1.5</TableBodyCell>
-                    </TableBodyRow>
-                    <TableBodyRow onClick={handleOpenEditing}>
-                        <TableBodyCell>1</TableBodyCell>
-                        <TableBodyCell>Иванов И.В</TableBodyCell>
-                        <TableBodyCell>Слесари</TableBodyCell>
-                        <TableBodyCell>13.01.2023</TableBodyCell>
-                        <TableBodyCell>Зачет</TableBodyCell>
-                        <TableBodyCell>
-                            «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
-                            производства»
-                        </TableBodyCell>
-                        <TableBodyCell>1.5</TableBodyCell>
-                    </TableBodyRow>
-                </tbody>
-            </Table>
+            <div className="attendance__table-wrapper">
+                <Table className="attendance__table">
+                    <TableHead>
+                        <TableHeadCell>Номер занятия</TableHeadCell>
+                        <TableHeadCell>Фамилия И.О</TableHeadCell>
+                        <TableHeadCell>Отдел</TableHeadCell>
+                        <TableHeadCell>Дата</TableHeadCell>
+                        <TableHeadCell>Зачет/Незачет</TableHeadCell>
+                        <TableHeadCell>Тема занятия</TableHeadCell>
+                        <TableHeadCell>Кол-во часов</TableHeadCell>
+                    </TableHead>
+                    <tbody>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                        <TableBodyRow onClick={handleOpenEditing}>
+                            <TableBodyCell>1</TableBodyCell>
+                            <TableBodyCell>Иванов И.В</TableBodyCell>
+                            <TableBodyCell>Слесари</TableBodyCell>
+                            <TableBodyCell>13.01.2023</TableBodyCell>
+                            <TableBodyCell>Зачет</TableBodyCell>
+                            <TableBodyCell>
+                                «Демонтаж и ремонт тягового электродвигателя троллейбусов с увеличенным автономным ходом
+                                производства»
+                            </TableBodyCell>
+                            <TableBodyCell>1.5</TableBodyCell>
+                        </TableBodyRow>
+                    </tbody>
+                </Table>
+            </div>
             <Pagination className="attendance__pagination" />
         </div>
     );
