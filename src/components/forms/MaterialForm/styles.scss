@@ -2,6 +2,9 @@
     // .material-form__label
     &__label {
         margin-bottom: 10px;
+        &--nopointer {
+            cursor: default;
+        }
     }
     // .material-form__input
     &__input {

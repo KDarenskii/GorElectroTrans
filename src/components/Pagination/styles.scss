@@ -1,5 +1,26 @@
+@import "../../assets/styles/vars.scss";
+
 .pagination {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    // .pagination__link
+    &__link {
+        font-size: 0.9rem;
+        color: $blue;
+        padding: 0.36rem 0.6rem;
+        border: 1px solid $grey;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten($grey, 10%);
+        }
+        &--active {
+            color: $white;
+            background-color: $blue;
+            &:hover {
+                background-color: $blue;
+                cursor: default;
+            }
+        }
+    }
 }

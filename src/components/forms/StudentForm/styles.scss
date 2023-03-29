@@ -1,3 +1,5 @@
+@import "../../../assets/styles/mixins.scss";
+
 .student-form {
     // .student-form__label
     &__label {
@@ -10,5 +12,12 @@
     // .student-form__select
     &__select {
         font-size: 0.8rem;
+    }
+    // .plan-form__actions
+    &__actions {
+        @include flex-center(0.6rem, flex-end);
+        margin-top: 1.5rem;
+        padding-top: 1.3rem;
+        border-top: 1px solid $grey;
     }
 }

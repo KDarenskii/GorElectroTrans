@@ -14,25 +14,32 @@
     &:focus {
         border-color: $blue;
     }
-    &--submit {
-        background-color: $yellow;
-        color: $black;
+    &--success {
+        background-color: $green;
+        color: $white;
         &:hover {
-            background-color: darken($yellow, 10%);
+            background-color: darken($green, 5%);
         }
     }
-    &--delete {
+    &--danger {
         background-color: $red;
         color: $white;
         &:hover {
             background-color: darken($red, 10%);
         }
     }
-    &--add {
+    &--info {
         background-color: $cyan;
         color: $white;
         &:hover {
             background-color: darken($cyan, 10%);
+        }
+    }
+    &--warning {
+        background-color: $yellow;
+        color: $black;
+        &:hover {
+            background-color: darken($yellow, 5%);
         }
     }
 }

@@ -23,7 +23,7 @@ const LoginForm: React.FC = () => {
             <Label className="login-form__label">
                 <Input className="login-form__input" placeholder="Пароль" type="password" />
             </Label>
-            <ActionButton className="login-form__button" colorType="add">
+            <ActionButton className="login-form__button" colorType="info">
                 Войти
             </ActionButton>
         </form>

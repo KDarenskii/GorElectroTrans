@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import {
     ATTENDANCE_ROUTE,
     DEPARTMENTS_ROUTE,
@@ -16,17 +16,19 @@ type Props = {
     className?: string;
 };
 
-const links = [
-    { title: "Студенты", path: STUDENTS_ROUTE.PATH },
-    { title: "Рабочий план", path: WORK_PLAN_ROUTE.PATH },
-    { title: "Журнал посещаемости", path: ATTENDANCE_ROUTE.PATH },
-    { title: "Учебные материалы", path: MATERIALS_ROUTE.PATH },
-    { title: "Отделы", path: DEPARTMENTS_ROUTE.PATH },
-];
-
 const Menu: React.FC<Props> = ({ className }) => {
     const location = useLocation();
+    const { divisionId } = useParams();
+
     const [activeLink, setActiveLink] = React.useState(location.pathname);
+
+    const links: { title: string; path: string }[] = [
+        { title: "Студенты", path: `/${divisionId}/` + STUDENTS_ROUTE.NAME },
+        { title: "Рабочий план", path: `/${divisionId}/` + WORK_PLAN_ROUTE.NAME },
+        { title: "Журнал посещаемости", path: `/${divisionId}/` + ATTENDANCE_ROUTE.NAME },
+        { title: "Учебные материалы", path: `/${divisionId}/` + MATERIALS_ROUTE.NAME },
+        { title: "Отделы", path: `/${divisionId}/` + DEPARTMENTS_ROUTE.NAME },
+    ];
 
     return (
         <nav className={cn("menu", className)}>
