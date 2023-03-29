@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/GorElectroTrans/static/css/main.54bd5331.css",
-    "main.js": "/GorElectroTrans/static/js/main.0daa36ff.js",
-    "static/js/787.4d350c16.chunk.js": "/GorElectroTrans/static/js/787.4d350c16.chunk.js",
-    "static/media/Verdana.eot": "/GorElectroTrans/static/media/Verdana.8ff50b17b89a6cb99382.eot",
-    "static/media/Verdana.ttf": "/GorElectroTrans/static/media/Verdana.06356c47838279a6fe85.ttf",
-    "static/media/Verdana.woff": "/GorElectroTrans/static/media/Verdana.515dad1f544c656e9b84.woff",
-    "static/media/logo.svg": "/GorElectroTrans/static/media/logo.26763bfe564f297cde6966878bbc982c.svg",
-    "static/media/logo-footer.svg": "/GorElectroTrans/static/media/logo-footer.7fb86365d0fd49b00d31d47c8b36a9e7.svg",
-    "index.html": "/GorElectroTrans/index.html",
-    "main.54bd5331.css.map": "/GorElectroTrans/static/css/main.54bd5331.css.map",
-    "main.0daa36ff.js.map": "/GorElectroTrans/static/js/main.0daa36ff.js.map",
-    "787.4d350c16.chunk.js.map": "/GorElectroTrans/static/js/787.4d350c16.chunk.js.map"
+    "main.css": "/static/css/main.290e2429.css",
+    "main.js": "/static/js/main.60262eb1.js",
+    "static/js/787.4d350c16.chunk.js": "/static/js/787.4d350c16.chunk.js",
+    "static/media/Verdana.eot": "/static/media/Verdana.8ff50b17b89a6cb99382.eot",
+    "static/media/Verdana.ttf": "/static/media/Verdana.06356c47838279a6fe85.ttf",
+    "static/media/Verdana.woff": "/static/media/Verdana.515dad1f544c656e9b84.woff",
+    "static/media/logo.svg": "/static/media/logo.26763bfe564f297cde6966878bbc982c.svg",
+    "static/media/logo-footer.svg": "/static/media/logo-footer.7fb86365d0fd49b00d31d47c8b36a9e7.svg",
+    "index.html": "/index.html",
+    "main.290e2429.css.map": "/static/css/main.290e2429.css.map",
+    "main.60262eb1.js.map": "/static/js/main.60262eb1.js.map",
+    "787.4d350c16.chunk.js.map": "/static/js/787.4d350c16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54bd5331.css",
-    "static/js/main.0daa36ff.js"
+    "static/css/main.290e2429.css",
+    "static/js/main.60262eb1.js"
   ]
 }
